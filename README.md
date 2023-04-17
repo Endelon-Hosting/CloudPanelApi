@@ -25,7 +25,7 @@
 
 Install as systemd service **Only tested on Ubuntu 22.04 so far**
    ```sh
-   sh <(curl https://raw.githubusercontent.com/Endelon-Hosting/CloudPanelApi/install.sh || wget -O - https://raw.githubusercontent.com/Endelon-Hosting/CloudPanelApi/install.sh)
+   sh <(curl https://raw.githubusercontent.com/Endelon-Hosting/CloudPanelApi/main/install.sh || wget -O - https://raw.githubusercontent.com/Endelon-Hosting/CloudPanelApi/main/install.sh)
    ```
 Enable and start the service
    ```sh
