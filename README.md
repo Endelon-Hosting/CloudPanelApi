@@ -32,6 +32,10 @@ Enable and start the service
    systemctl enable --now cpapiserver
    ```
 
+Default endpoint:
+
+http://your-server-ip:9999
+
 ### Configuration
 
 API Key:
