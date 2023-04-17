@@ -8,7 +8,7 @@
 <h3 align="center">Cloud Panel Api</h3>
 
   <p align="center">
-    An external api server build using the coud panel cli
+    An external api server build using the cloud panel cli
   </p>
 </div>
 
