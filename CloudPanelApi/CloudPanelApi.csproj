@@ -8,6 +8,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Logging.Net" Version="1.1.0" />
+        <PackageReference Include="SSH.NET" Version="2020.0.2" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
 
@@ -15,6 +17,15 @@
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="App\Helpers\" />
+      <Folder Include="App\Http\Controllers\" />
+      <Folder Include="App\Http\Middleware\" />
+      <Folder Include="App\Http\Requests\" />
+      <Folder Include="App\Http\Resources\" />
+      <Folder Include="App\Repositories\" />
     </ItemGroup>
 
 </Project>

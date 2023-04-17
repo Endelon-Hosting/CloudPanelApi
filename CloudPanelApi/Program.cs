@@ -1,3 +1,8 @@
+using CloudPanelApi.App.Services;
+using Logging.Net;
+
+Logger.Info("Starting cloud panel api server");
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +11,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<CliService>();
 
 var app = builder.Build();
 
