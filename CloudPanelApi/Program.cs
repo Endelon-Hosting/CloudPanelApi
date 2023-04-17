@@ -14,6 +14,12 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<CliService>();
 
+builder.Services.AddScoped<DatabaseService>();
+builder.Services.AddScoped<SiteService>();
+builder.Services.AddScoped<VHostTemplatesService>();
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<LetsEncryptService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
