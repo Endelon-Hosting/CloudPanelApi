@@ -1,0 +1,12 @@
+﻿[Unit]
+Description=cpapiserver
+Wants=network.target
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/lib/cpapiserver/
+ExecStart=/bin/sh -c "/lib/cpapiserver/CloudPanelApi >> /var/log/cpapiserver.log"
+
+[Install]
+WantedBy=multi-user.target

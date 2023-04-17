@@ -21,7 +21,6 @@
 
     <ItemGroup>
       <Folder Include="App\Helpers\" />
-      <Folder Include="App\Http\Middleware\" />
     </ItemGroup>
 
 </Project>

@@ -1,3 +1,4 @@
+using CloudPanelApi.App.Http.Middleware;
 using CloudPanelApi.App.Services;
 using Logging.Net;
 
@@ -32,6 +33,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<ApiKeyMiddleware>();
 
 app.MapControllers();
 
