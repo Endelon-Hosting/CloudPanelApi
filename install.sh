@@ -14,8 +14,7 @@ chmod +x /lib/cpapiserver/CloudPanelApi
 systemctl daemon-reload
 systemctl enable --now cpapiserver
 service cpapiserver start
-API_KEY=0aec0551-e311-4ce0-8d9a-06751ac01234
-echo Default API Key: $API_KEY
-echo Make your API key unique using this cmd: API_KEY=Your-Random-String-Here-1234
+API_KEY=`openssl rand -hex 28`
+echo Your new random API Key: $API_KEY
 echo Be sure to open port 9999 on your CloudPanel firewall too
 echo Ok, cpapiserver service should be installed and running!
