@@ -1,4 +1,4 @@
-﻿#! /bin/bash
+#!/bin/bash
 
 echo "Installing cloud panel api server"
 
@@ -12,3 +12,9 @@ curl -L -o /etc/systemd/system/cpapiserver.service https://raw.githubusercontent
 chmod 664 /etc/systemd/system/cpapiserver.service
 chmod +x /lib/cpapiserver/CloudPanelApi
 systemctl daemon-reload
+systemctl enable --now cpapiserver
+service cpapiserver start
+API_KEY=`openssl rand -hex 28`
+echo Your new random API Key: $API_KEY
+echo Be sure to open port 9999 on your CloudPanel firewall too
+echo Ok, cpapiserver service should be installed and running!
